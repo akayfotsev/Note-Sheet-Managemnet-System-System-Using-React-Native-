@@ -590,7 +590,7 @@ export default function CreateNotesheet() {
         <View>
           <UploadImage setModalVisible={setModalVisible} />
           <TouchableOpacity
-            onPress={() => (
+            onPress={() => ( 
               Alert.alert('Notessheet is created'), navigation.goBack()
             )}
             style={{

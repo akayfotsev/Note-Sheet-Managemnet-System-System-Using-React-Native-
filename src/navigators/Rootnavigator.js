@@ -410,6 +410,7 @@ function MyTabs() {
         // backgroundColor: theme?.card_bg || '#fff',
         backgroundColor: '#ffffff',
       }}>
+      {/*
       {Counts ? (
         <Tab.Screen
           name="C2"
@@ -428,6 +429,7 @@ function MyTabs() {
           }}
         />
       ) : null}
+        */}
       <Tab.Screen
         name="All"
         component={Options}
@@ -459,11 +461,11 @@ function MyTabs() {
         options={{tabBarLabel: 'Pending'}}
       />
       <Tab.Screen
-        name="Others"
+        name="Status"
         children={() => (
-          <Options showFilter={Counts ? true : null} filterData="Others" />
+          <Options showFilter={Counts ? true : null} filterData="Pending" />
         )}
-        options={{tabBarLabel: 'Others'}}
+        options={{tabBarLabel: 'Status'}}
       />
     </Tab.Navigator>
   );
